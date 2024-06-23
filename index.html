@@ -1,61 +1,292 @@
-<!DOCTYPE html>
+<!DOCTYPE html">
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
-</head>
-<body>
-    <h1>Resume</h1>
-    <h2>Muhammad Mussab</h2>
-    <hr>
-    <img src="./assets/images/image.png" height="170">
-    <h2>Summary</h2>
-    <p>
-        I am currently a CS student persuading my bachelors from 
-        FAST NUCES Karachi. I a passionate app and web developer having 
-        skills in HTML, CSS, JS, Node JS, Django and Flutter. I have a keen interest in 
-        development and in AI (specifically in Generative AI).
-    </p>
-    <h2>Education</h2>
-    <ul>
-        <li>School: Hamdard Public School</li>
-        <li>College: Adamjee Govt. Science College</li>
-        <li>University: FAST NUCES</li>
-    </ul>
-    <h2>Work Experience</h2>
-    <p>Currently no work experience</p>
-    <h2>Skills</h2>
-    <ul>
-        <li>Mobile Application Development</li>
-        <ul>
-            <li>Flutter (Dart)</li>
-            <li>Firebase</li>
-            <li>REST API's</li>
-        </ul>
-        <li>BackEnd Development</li>
-        <ul>
-            <li>Django (Python)</li>
-            <li>Node.js (JS)</li>
-        </ul>
-        <li>Other Skills</li>
-        <ul>
-            <li>Data Structures (C & C++)</li>
-            <li>Assembly Language</li>
-            <li>Version Control (Git & Github)</li>
-            <li>Linux Commands</li>
-        </ul>
-    </ul>
-    <h2>Certifications</h2>
-    <ul>
-        <li><a href="https://www.coursera.org/account/accomplishments/verify/NJNK7UTGDXMY">Django Web Framework</a></li>
-        <li><a href="https://www.udemy.com/certificate/UC-f39d5dc3-c642-4fad-a9e0-fd72be452983/">Flutter & Dart - The Complete Guide</a></li>
-        <li><a href="https://coursera.org/verify/SU97A6W2D2CK">Introduction to Back-End Development</a></li>
-        <li><a href="https://coursera.org/verify/SU97A6W2D2CK">Programming in Python</a></li>
-    </ul>
-    <p><a href="./contact.html">Contact Me</a></p>
-    <footer>
-        <p>© M. Mussab. All rights reserved.</p>
-    </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+ES:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg my-2 mt-1">
+        <div class="container-fluid">
+          <a class="navbar-brand navbar-heading" href="#">Portfolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="d-flex align-items-end navbar-nav ms-auto mb-2 mb-lg-0 px-2"
+            >
+              <li class="text-white nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <a class="nav-link text-white" href="#about">About</a>
+              <li class="nav-item"></li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#projects">Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#certifications">Certifications</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#footer">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- title -->
+    <section id="title">
+      <div class="body-container container">
+        <div class="content-container">
+          <h1 class="body-title">Muhammad Mussab</h1>
+          <h2 class="body-subheading">A Passionate App and Web Developer</h2>
+        </div>
+        <div class="image-container">
+          <img src="./assets/images/image.png" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <!-- <h1 class="about-heading py-4 text-white mb-5">About Me</h1>-->
+        <h2 class="p-2 border-bottom text-white projects-heading">About Me:</h2>
+        <p class="col-lg-8 mx-auto fs-4 about-text mt-5 pt-5">
+          ""I am a junior Computer Science student at FAST NUCES, Karachi, with
+          a strong interest in web and mobile application development.I am
+          passionate about leveraging modern technologies to create impactful
+          and user-centric applications, and I am continually seeking
+          opportunities to expand my expertise and contribute to meaningful
+          projects in the tech industry.""
+        </p>
+        <div class="d-inline-flex gap-2 mb-5"></div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="container px-4 py-5" id="featured-3">
+        <h2 class="pb-2 border-bottom text-white projects-heading">
+          Latest Projects:
+        </h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+            <div class="feature-icon bg-primary bg-gradient">
+              <img
+                src="./assets/images/terminal.svg"
+                height="60px"
+                style="padding: 5px"
+              />
+            </div>
+            <h2 class="text-white mt-3">
+              Shared Memory Based Command Execution
+            </h2>
+            <p class="text-white">
+              Efficient Linux command execution using concurrency,
+              multithreading, multiprocessing, and shared memory. This program
+              was created for my Operating Systems Course.
+            </p>
+            <a
+              href="https://github.com/Mussab2003/Shared-Memory-Based-Command-Execution_OS/" target="_blank"
+              class="icon-link"
+            >
+              For More Info.
+            </a>
+          </div>
+          <div class="feature col">
+            <div class="feature-icon bg-primary bg-gradient">
+              <img
+                src="./assets/images/controller.svg"
+                height="60px"
+                style="padding: 5px"
+              />
+            </div>
+            <h2 class="text-white mt-3">Rogue Reloaded</h2>
+            <p class="text-white">
+              A 2D Shooter Game created in SFML (C++) for my Object Oriented
+              Course.
+            </p>
+            <a href="#" class="icon-link">
+              For More Info.
+              <svg class="bi" width="1em" height="1em">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="feature col">
+            <div class="feature-icon bg-primary bg-gradient">
+              <img
+                src="./assets/images/database.svg"
+                height="60px"
+                style="padding: 5px"
+              />
+            </div>
+            <h2 class="text-white mt-3">Database Management System</h2>
+            <p class="text-white">
+              Created a database management system in C++ using Qt framework for
+              my data structure course. This program takes sql queries and parse
+              them to perfom tasks. The program uses fundamental Data Structures
+              concept including linked list, binary trees, hashing etc.
+            </p>
+            <a href="#" class="icon-link">
+              For More Info.
+              <svg class="bi" width="1em" height="1em">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications">
+      <div class="container">
+        <h2 class="pb-2 border-bottom text-white projects-heading">
+          Certifications:
+        </h2>
+        <div class="row pt-4 my-4">
+          <div class="card mx-2" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Flutter & Dart - The Complete Guide</h5>
+              <p class="card-text">
+                This course provides a comprehensive education in developing
+                Android applications using Flutter and Dart. It covers essential
+                topics such as building user interfaces, managing state,
+                navigation, and making network requests. The course also
+                includes advanced concepts like animations, using native device
+                features, and integrating Firebase for authentication and
+                real-time databases. With a project-based approach, learners
+                gain practical experience, culminating in the ability to create
+                and deploy high-quality, feature-rich Android apps.
+              </p>
+              <a
+                href="https://www.udemy.com/certificate/UC-f39d5dc3-c642-4fad-a9e0-fd72be452983/"
+                class="card-link"
+                >Show credentials</a
+              >
+            </div>
+          </div>
+          <div class="card mx-2" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Introduction to Back-End Development</h5>
+              <p class="card-text">
+                This course provided a foundational understanding of web
+                development, covering essential aspects of both frontend and
+                backend technologies. The course provided the basics of HTML and
+                CSS to create and style web pages. The course explained the
+                client-server model, detailing how web browsers (clients)
+                interact with servers via HTTP requests and responses.
+                Additionally, it introduced server-side programming concepts and
+                provided an overview of how servers process requests and manage
+                data using databases.
+              </p>
+              <a
+                href="https://www.udemy.com/certificate/UC-f39d5dc3-c642-4fad-a9e0-fd72be452983/"
+                class="card-link"
+                >Show credentials</a
+              >
+            </div>
+          </div>
+          <div class="card mx-2" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Programming with Python</h5>
+              <p class="card-text">
+                This course offers a thorough introduction to Python, focusing
+                on foundational programming skills and object-oriented
+                programming (OOP) principles. This course provide essential
+                concepts such as variables, data types, control structures, and
+                functions. The course also delves into OOP, teaching the
+                creation and use of classes and objects. Additionally, it
+                introduces various important Python libraries.This course
+                provides a solid foundation for both beginners and those looking
+                to enhance their programming skills with Python.
+              </p>
+              <a
+                href="https://www.udemy.com/certificate/UC-f39d5dc3-c642-4fad-a9e0-fd72be452983/"
+                class="card-link"
+                >Show credentials</a
+              >
+            </div>
+          </div>
+          <div class="card mx-2" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Django Web Framework</h5>
+              <p class="card-text">
+                This course provided
+                a comprehensive introduction to building web
+                applications using Django. The course covered the basics of the
+                framework, including setting up projects, creating and managing
+                models, and performing CRUD (Create, Read, Update, Delete)
+                operations. It also delved into making RESTful APIs, allowing
+                for efficient communication between the client and server.
+                Additionally, the course included an overview of databases,
+                teaching how to integrate and manage them within a Django
+                project.
+              </p>
+              <a
+                href="https://www.udemy.com/certificate/UC-f39d5dc3-c642-4fad-a9e0-fd72be452983/"
+                class="card-link"
+                >Show credentials</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section id="footer">
+      <div class="container bg-white mx-7">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-body-secondary">© M.Mussab All Rights Reserved</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex mx-">
+            <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/muhammad-mussab-8677551b1/"  target="_blank"><img src="./assets/images/linkedin.svg"></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="https://github.com/Mussab2003" target="_blank"><img src="./assets/images/github.svg"></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/profile.php?id=100079478623433" target="_blank"><img src="./assets/images/facebook.svg"></a></li>
+          </ul>
+        </footer>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
+
