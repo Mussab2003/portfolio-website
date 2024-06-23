@@ -69,6 +69,24 @@ body {
   align-items: center;
 }
 
+@media (max-width: 600px){
+  .body-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+
+
+  
+  #title, #projects, #certifications, #about, #footer, .image-container{
+    margin: 10px;
+  }
+
+  
+}
+
 .feature-icon {
   width: 4rem;
   height: 4rem;
