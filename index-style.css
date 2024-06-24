@@ -83,7 +83,10 @@ body {
     align-items: center;
     margin: 10px;
   }
-
+  .main-image{
+    height: 300;
+    width: 300;
+  }
   .body-title{
     font-size: 40px;
     margin-bottom: 17 px;
@@ -94,7 +97,7 @@ body {
   }
   
   #title, #projects, #certifications, #about, #footer, .image-container{
-    margin-left: 20px;
+    margin-left: 15px;
     margin-top: 20px;
   }
 
